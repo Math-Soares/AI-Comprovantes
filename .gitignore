@@ -1,0 +1,126 @@
+# ============================================================
+# CREDENCIAIS E DADOS SENSÍVEIS (NUNCA COMMITAR!)
+# ============================================================
+
+# Variáveis de ambiente com credenciais
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Credenciais OAuth2 do Google
+credentials/
+
+# Chaves privadas
+*.key
+*.pem
+*.p12
+
+# ============================================================
+# AUTENTICAÇÃO WHATSAPP (SESSÃO DO BOT)
+# ============================================================
+
+# Pasta de autenticação do WhatsApp (contém sessão ativa)
+auth_info/
+auth_info_*/
+auth_info_replica/
+
+# ============================================================
+# DADOS PROCESSADOS (COMPROVANTES)
+# ============================================================
+
+# Comprovantes recebidos (podem conter dados sensíveis)
+comprovantes/
+comprovantes_*/
+credentials_*/
+
+# ============================================================
+# DEPENDÊNCIAS
+# ============================================================
+
+node_modules/
+
+# ============================================================
+# BUILD E CACHE
+# ============================================================
+
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+.cache/
+
+# ============================================================
+# ARQUIVOS TEMPORÁRIOS E BACKUPS
+# ============================================================
+
+# Backups de código
+*.old.ts
+*.old.js
+*.backup.*
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporários
+*.tmp
+*.temp
+.tmp/
+
+# ============================================================
+# SISTEMA OPERACIONAL
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================================
+# IDE E EDITORES
+# ============================================================
+
+# VSCode
+.vscode/settings.json
+.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, IntelliJ, etc)
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# OUTROS
+# ============================================================
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Test artifacts
+.test/
+__tests__/__snapshots__/
